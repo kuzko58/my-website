@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --theme-color: #78b0ff;
+    --travel-01: -504px;
+    --travel-02: calc(var(--travel-01) * 2);
+    --travel-03: calc(var(--travel-01) * 3);
+    --travel-04: calc(var(--travel-01) * 4);
+}
+
+/** ************ General ************ * */
+
+.hd-gr {
+    color: gray;
+}
+
+.slider-image {
+    width: 100%;
+}
+
+.flex-col {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:active {
+    color: lightskyblue;
+}
+
+
+/** ************ Page Components ************ * */
+
+html,
+body {
+    background-color: whitesmoke;
+    color: darkgray;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background-color: var(--theme-color);
+    height: 350px;
+    width: 100%;
+}
+
+footer {
+    height: 50px;
+}
+
+.card {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(128, 128, 128, .3),
+        -2px -2px 4px rgba(128, 128, 128, .3);
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    max-width: 1000px;
+    min-width: 700px;
+    width: 73.21vw;
+}
+
+.card-section {
+    height: 100%;
+    width: 50%;
+}
+
+.card-title {
+    color: var(--theme-color);
+    margin: 60px auto;
+    text-align: center;
+}
+
+.banner {
+    box-shadow: 2px 2px 4px rgba(128, 128, 128, .5),
+        -2px -2px 4px rgba(128, 128, 128, .5);
+    height: 36.61vw;
+    max-height: 500px;
+    min-height: 350px;
+    margin-top: -250px;
+}
+
+.banner-sec-1 {
+    overflow: hidden;
+}
+
+.sec-row {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+}
+
+.banner-sec-2-head {
+    height: 20%;
+}
+
+.banner-sec-2-head h1 {
+    color: var(--theme-color);
+    font-weight: 300;
+}
+
+.banner-sec-2-head span {
+    font-size: 0.875em;
+    margin-left: 5px;
+}
+
+.banner-sec-2-body {
+    height: 60%;
+}
+
+.banner-sec-2-body p {
+    margin: 2px 0 20px 5px;
+}
+
+.banner-sec-2-foot {
+    align-items: center;
+    background-color: var(--theme-color);
+    color: whitesmoke;
+    display: flex;
+    font-size: 1.5rem;
+    height: 20%;
+    justify-content: space-evenly;
+}
+
+.skill-row {
+    box-sizing: border-box;
+    padding: 20px 100px;
+}
+
+.skill-row p {
+    margin: 10px 0;
+}
+
+.skill-bar {
+    border-radius: 2.5px;
+    height: 5px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.skill-rating {
+    border-radius: 2.5px;
+    height: 5px;
+}
+
+.skill-9 {
+    width: 90%;
+    background-color: #00de81;
+}
+
+.skill-8 {
+    width: 80%;
+    background-color: #00f78f;
+}
+
+.skill-7 {
+    width: 70%;
+    background-color: var(--theme-color);
+}
+
+.skill-6 {
+    width: 60%;
+    background-color: #eeff2b;
+}
+
+.skill-5 {
+    width: 50%;
+    background-color: darkgray;
+}
+
+.educ {
+    box-sizing: border-box;
+    padding: 20px 100px;
+    width: 100%;
+}
+
+.educ p {
+    margin: 20px 0;
+}
+
+/** ************* Media Query ************** * */
+
+@media only screen and (max-width: 768px) {
+    header {
+        box-shadow: 2px 2px 4px rgba(128, 128, 128, .3),
+            -2px -2px 4px rgba(128, 128, 128, .3);
+        height: 50px;
+    }
+
+    .card {
+        border-radius: 0;
+        box-shadow: none;
+        flex-direction: column;
+        height: auto;
+        max-width: 800px;
+        min-width: 300px;
+        width: 100vw;
+    }
+
+    .card-section {
+        width: 100%;
+    }
+
+    .card-title {
+        box-sizing: border-box;
+        margin: auto;
+        max-width: 800px;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .banner {
+        box-shadow: none;
+        margin-top: 0;
+        height: auto;
+        min-height: none;
+        max-height: none;
+    }
+
+    .banner-sec-1 {
+        height: 100vw;
+        max-height: 800px;
+        min-height: 300px;
+        width: 100%;
+    }
+
+    .skill-row {
+        padding: 20px;
+    }
+
+    .educ {
+        padding: 0 20px;
+    }
+}
+
+
+/** ************************* Animation ***************** * */
+.animate-slider {
+    animation-name: carousel;
+    animation-duration: 48s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateY(0px);
+    }
+
+    18.4% {
+        transform: translateY(0px);
+    }
+
+    20.4% {
+        transform: translateY(var(--travel-01));
+    }
+
+    38.8% {
+        transform: translateY(var(--travel-01));
+    }
+
+    40.8% {
+        transform: translateY(var(--travel-02));
+    }
+
+    59.2% {
+        transform: translateY(var(--travel-02));
+    }
+
+    61.2% {
+        transform: translateY(var(--travel-03));
+    }
+
+    79.6% {
+        transform: translateY(var(--travel-03));
+    }
+
+    81.6% {
+        transform: translateY(var(--travel-04));
+    }
+
+    100% {
+        transform: translateY(var(--travel-04));
+    }
+
+}
