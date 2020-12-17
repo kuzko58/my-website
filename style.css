@@ -206,7 +206,7 @@ footer {
     header {
         box-shadow: 2px 2px 4px rgba(128, 128, 128, .7),
             -2px -2px 4px rgba(128, 128, 128, .7);
-        height: 50px;
+        height: 0;
     }
 
     .card {
