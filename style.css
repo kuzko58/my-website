@@ -5,10 +5,6 @@
 
 :root {
     --theme-color: #78b0ff;
-    --travel-01: -504px;
-    --travel-02: calc(var(--travel-01) * 2);
-    --travel-03: calc(var(--travel-01) * 3);
-    --travel-04: calc(var(--travel-01) * 4);
 }
 
 /** ************ General ************ * */
@@ -274,43 +270,43 @@ footer {
 
 @keyframes carousel {
     0% {
-        transform: translateY(0px);
+        transform: translateY(0%);
     }
 
     18.4% {
-        transform: translateY(0px);
+        transform: translateY(0%);
     }
 
     20.4% {
-        transform: translateY(var(--travel-01));
+        transform: translateY(-20%);
     }
 
     38.8% {
-        transform: translateY(var(--travel-01));
+        transform: translateY(-20%);
     }
 
     40.8% {
-        transform: translateY(var(--travel-02));
+        transform: translateY(-40%);
     }
 
     59.2% {
-        transform: translateY(var(--travel-02));
+        transform: translateY(-40%);
     }
 
     61.2% {
-        transform: translateY(var(--travel-03));
+        transform: translateY(-60%);
     }
 
     79.6% {
-        transform: translateY(var(--travel-03));
+        transform: translateY(-60%);
     }
 
     81.6% {
-        transform: translateY(var(--travel-04));
+        transform: translateY(-80%);
     }
 
     100% {
-        transform: translateY(var(--travel-04));
+        transform: translateY(-80%);
     }
 
 }
