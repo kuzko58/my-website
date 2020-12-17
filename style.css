@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'proxima thin';
+    src: url('assets/fonts/Proxima Nova ScOsf Thin.otf');
+}
+
+@font-face {
+    font-family: 'proxima Alt Regular';
+    src: url('assets/fonts/Mark Simonson - Proxima Nova Alt Regular.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova ScOsf Regular';
+    src: url('assets/fonts/Proxima Nova ScOsf Regular.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('assets/fonts/Mark Simonson - Proxima Nova Regular.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +30,7 @@
 /** ************ General ************ * */
 
 .hd-gr {
-    color: gray;
+    color: darkgray;
 }
 
 .slider-image {
@@ -62,8 +82,8 @@ a {
 html,
 body {
     background-color: whitesmoke;
-    color: darkgray;
-    font-family: sans-serif;
+    color: gray;
+    font-family: 'Proxima Nova ScOsf Regular', sans-serif;
     font-size: 16px;
 }
 
@@ -118,6 +138,7 @@ footer {
 
 .banner-sec-2-head h1 {
     color: var(--theme-color);
+    font-family: 'proxima thin';
     font-weight: 300;
 }
 
