@@ -219,7 +219,7 @@ footer {
     }
 
     .card {
-        border-bottom: 1px solid lightgray;
+        border-bottom: 1px solid #e3dede;
         border-radius: 0;
         box-shadow: none;
         height: auto;
