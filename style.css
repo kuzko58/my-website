@@ -4,7 +4,7 @@
 }
 
 :root {
-    --theme-color: #78b0ff;
+    --theme-color: #92bfff;
 }
 
 /** ************ General ************ * */
@@ -18,23 +18,42 @@
 }
 
 .flex-col {
-    justify-content: space-between;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont-width {
+    max-width: 1000px;
+    min-width: 700px;
+    width: 73.21vw;
 }
 
 .divider {
-    display: flex;
-    flex-direction: row;
     width: 100%;
 }
 
-a {
-    color: whitesmoke;
+.sec-row {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
 }
 
-a:active {
-    color: lightskyblue;
+.sec-row-2 {
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 2px;
+    text-align: center;
+    width: 70%;
+}
+
+.sec-row-2 p {
+    line-height: 1.5rem;
+    margin: 10px auto;
+}
+
+a {
+    color: inherit;
 }
 
 
@@ -66,9 +85,6 @@ footer {
     display: flex;
     flex-direction: row;
     margin: 20px auto;
-    max-width: 1000px;
-    min-width: 700px;
-    width: 73.21vw;
 }
 
 .card-section {
@@ -96,12 +112,6 @@ footer {
     overflow: hidden;
 }
 
-.sec-row {
-    box-sizing: border-box;
-    padding: 20px;
-    width: 100%;
-}
-
 .banner-sec-2-head {
     height: 20%;
 }
@@ -113,20 +123,20 @@ footer {
 
 .banner-sec-2-head span {
     font-size: 0.875em;
-    margin-left: 0px;
+    margin-left: 6px;
 }
 
 .banner-sec-2-body {
-    height: 60%;
+    height: 65%;
 }
 
 .banner-sec-2-body .divider span {
-    width: 20%;
+    width: 50%;
 }
 
 .banner-sec-2-body .divider p {
     margin: 2px 0 20px 5px;
-    width: 80%
+    width: 100%;
 }
 
 .banner-sec-2-foot {
@@ -135,24 +145,24 @@ footer {
     color: whitesmoke;
     display: flex;
     font-size: 1.5rem;
-    height: 20%;
+    height: 15%;
     justify-content: space-evenly;
 }
 
 .skill-row {
-    box-sizing: border-box;
-    padding: 20px 100px;
+    width: 30%
 }
 
 .skill-row p {
-    margin: 10px 0;
+    margin: 5px;
 }
 
+
 .skill-bar {
+    background-color: lightgray;
     border-radius: 2.5px;
     height: 5px;
     width: 100%;
-    background-color: lightgray;
 }
 
 .skill-rating {
@@ -161,40 +171,30 @@ footer {
 }
 
 .skill-9 {
-    width: 90%;
     background-color: #00de81;
+    width: 90%;
 }
 
 .skill-8 {
-    width: 80%;
     background-color: #00f78f;
+    width: 80%;
 }
 
 .skill-7 {
-    width: 70%;
     background-color: var(--theme-color);
+    width: 70%;
 }
 
 .skill-6 {
-    width: 60%;
     background-color: #eeff2b;
+    width: 60%;
 }
 
 .skill-5 {
-    width: 50%;
     background-color: darkgray;
+    width: 50%;
 }
 
-.educ {
-    box-sizing: border-box;
-    padding: 20px 100px;
-    width: 100%;
-}
-
-.educ p {
-    line-height: 1.5rem;
-    margin: 20px 0;
-}
 
 /** ************* Media Query ************** * */
 
@@ -204,38 +204,42 @@ footer {
     }
 
     header {
-        box-shadow: 2px 2px 4px rgba(128, 128, 128, .7),
-            -2px -2px 4px rgba(128, 128, 128, .7);
-        height: 0;
+        height: 50px;
     }
 
-    .card {
-        border-radius: 0;
-        box-shadow: none;
-        height: auto;
+    .cont-width {
         max-width: 800px;
         min-width: 300px;
         width: 100vw;
+    }
+
+    .divider {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .card {
+        border-bottom: 1px solid lightgray;
+        border-radius: 0;
+        box-shadow: none;
+        height: auto;
+    }
+
+    .card-title {
+        margin: 40px auto;
     }
 
     .card-section {
         width: 100%;
     }
 
-    .card-title {
-        box-sizing: border-box;
-        margin: auto;
-        max-width: 800px;
-        padding: 20px;
-    }
-
     .banner {
         box-shadow: none;
         flex-direction: column;
-        margin-top: 0;
         height: auto;
-        min-height: none;
+        margin-top: 0;
         max-height: none;
+        min-height: none;
     }
 
     .banner-sec-1 {
@@ -246,20 +250,39 @@ footer {
     }
 
     .banner-sec-2 {
-        text-align: left;
+        text-align: center;
+    }
+
+    .banner-sec-2-body .divider span {
+        width: auto;
+    }
+
+    .banner-sec-2-body .divider p {
+        margin: 2px 0 20px 5px;
+        width: auto;
+    }
+
+    .banner-sec-2-head {
+        background-color: var(--theme-color);
+        color: lightgray;
+        text-align: center;
+    }
+
+    .banner-sec-2-head h1 {
+        color: white;
+    }
+
+    .banner-sec-2-body {
+        text-align: center;
+    }
+
+    .banner-sec-2-foot {
+        background-color: white;
+        color: #c5ddff;
     }
 
     .skill-row {
-        padding: 10px 20px;
-    }
-
-    .educ {
-        box-sizing: border-box;
-        padding: 0 20px;
-    }
-
-    .educ p {
-        margin: 0 auto 20px;
+        width: 50%;
     }
 }
 
