@@ -264,7 +264,8 @@ footer {
 
     .banner-sec-2-head {
         background-color: var(--theme-color);
-        color: lightgray;
+        color: #e3dede;
+        opacity: 0.8;
         text-align: center;
     }
 
