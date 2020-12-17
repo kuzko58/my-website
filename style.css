@@ -59,7 +59,7 @@ footer {
 }
 
 .card {
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(128, 128, 128, .3),
         -2px -2px 4px rgba(128, 128, 128, .3);
@@ -199,6 +199,10 @@ footer {
 /** ************* Media Query ************** * */
 
 @media only screen and (max-width: 500px) {
+    body {
+        background-color: white;
+    }
+
     header {
         box-shadow: 2px 2px 4px rgba(128, 128, 128, .7),
             -2px -2px 4px rgba(128, 128, 128, .7);
