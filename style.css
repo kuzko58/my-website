@@ -204,7 +204,7 @@ footer {
     }
 
     header {
-        height: 50px;
+        height: 0;
     }
 
     .cont-width {
