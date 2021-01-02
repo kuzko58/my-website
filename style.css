@@ -187,35 +187,28 @@ footer {
 }
 
 .skill-rating {
+    background-color: var(--theme-color);
     border-radius: 2.5px;
     height: 5px;
 }
 
 .skill-9 {
-    background-color: #00de81;
-    background-color: var(--theme-color);
     width: 90%;
 }
 
 .skill-8 {
-    background-color: #00f78f;
-    background-color: var(--theme-color);
     width: 80%;
 }
 
 .skill-7 {
-    background-color: var(--theme-color);
     width: 70%;
 }
 
 .skill-6 {
-    background-color: #eeff2b;
-    background-color: var(--theme-color);
     width: 60%;
 }
 
 .skill-5 {
-    background-color: darkgray;
     width: 50%;
 }
 
@@ -247,10 +240,6 @@ footer {
         border-radius: 0;
         box-shadow: none;
         height: auto;
-    }
-
-    .card-title {
-        margin: 40px auto;
     }
 
     .card-section {
