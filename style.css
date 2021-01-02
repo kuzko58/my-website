@@ -115,7 +115,7 @@ footer {
 .card-title {
     color: var(--theme-color);
     font-weight: 300;
-    margin: 60px auto;
+    margin: 40px auto;
     text-align: center;
 }
 
@@ -180,7 +180,7 @@ footer {
 
 
 .skill-bar {
-    background-color: lightgray;
+    background-color: #e1e1e1;
     border-radius: 2.5px;
     height: 5px;
     width: 100%;
@@ -193,11 +193,13 @@ footer {
 
 .skill-9 {
     background-color: #00de81;
+    background-color: var(--theme-color);
     width: 90%;
 }
 
 .skill-8 {
     background-color: #00f78f;
+    background-color: var(--theme-color);
     width: 80%;
 }
 
@@ -208,6 +210,7 @@ footer {
 
 .skill-6 {
     background-color: #eeff2b;
+    background-color: var(--theme-color);
     width: 60%;
 }
 
